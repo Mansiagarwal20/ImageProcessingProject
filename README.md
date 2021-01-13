@@ -2,8 +2,10 @@
 Mini Project using opencv in C++
 
 Name- Mansi Agarwal     
-Course – B.Tech CSE (DS AND AI)
+Course – B.Tech CSE (DS AND AI) 
+
 Batch - 2019-23
+
 The project is about using opencv to process an image in C++.In the following project I have displayed an image and rotated the image anti clockwise by any angle given as input by the user.
 The tools and technology used are as follows:
 1.	Visual Studio
