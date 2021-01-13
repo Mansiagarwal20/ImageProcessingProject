@@ -15,7 +15,7 @@ The project has been made as follows:
 1.	The first step is installing Visual studio and opencv on our system using Internet.
 2.	Once both of them got installed I modified the path in the system settings so the code that is written in Visual studio can be executed.
 3.	Now I created an empty console type C++ project on Visual studio and created a new source file which contains the code for my project.
-4.      So first of all we include the header files for opencv and create a function rotate which has the image and angle as arguments. Inside the function the point of rotation is specified at which the image rotates through the given angle in anti clockwise direction. 
+4. So first of all we include the header files for opencv and create a function rotate which has the image and angle as arguments. Inside the function the point of rotation is specified at which the image rotates through the given angle in anti clockwise direction. 
 
 warpAffine is used for the size of the output image.
 
@@ -38,7 +38,7 @@ First of all we should check that the solution platform is the right configurati
 Then click on the project properties and add additional include directories, additional library directories and additional dependencies.
 
 6.	Now Build the program and Run to get the output.
-7.      The code for the project is in the files.
+7. The code for the project is in the files.
 
  
  
