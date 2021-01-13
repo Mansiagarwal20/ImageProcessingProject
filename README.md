@@ -10,6 +10,7 @@ The project is about using opencv to process an image in C++.In the following pr
 The tools and technology used are as follows:
 1.	Visual Studio
 2.	OpenCv
+
 The project has been made as follows:
 1.	The first step is installing Visual studio and opencv on our system using Internet.
 2.	Once both of them got installed I modified the path in the system settings so the code that is written in Visual studio can be executed.
