@@ -14,48 +14,7 @@ The project has been made as follows:
 1.	The first step is installing Visual studio and opencv on our system using Internet.
 2.	Once both of them got installed I modified the path in the system settings so the code that is written in Visual studio can be executed.
 3.	Now I created an empty console type C++ project on Visual studio and created a new source file which contains the code for my project.
-4.	Then code is as follows:
-
-#include<opencv2/opencv.hpp>
-#include<iostream>
-using namespace std;
-using namespace cv;
-Mat rotate(Mat img, double angle)
-{
-	Mat after;
-	Point2f pt(img.cols / 2., img.rows / 2.);
-	Mat r = getRotationMatrix2D(pt, angle, 1.0);
-	warpAffine(img, after, r, Size(img.cols, img.rows));
-	return after;
-}
-int main()
-{
-	int a;
-	Mat img = imread("coding.jpg");
-	Mat after;
-	if (img.empty())
-	{
-		cout << "Error!!";
-		cin.get();
-		return -1;
-	}
-	cout << "Enter Angle by which the image should be rotated:"<<endl;
-	cin >> a;
-	after = rotate(img, a);
-	namedWindow("Image", WINDOW_NORMAL);
-	imshow("Image", img);
-	namedWindow("Image After Rotation", WINDOW_NORMAL);
-	imshow("Image After Rotation", after);
-	waitKey(0);
-	destroyWindow("Image");
-	destroyWindow("Image After Rotation");
-	return 0;
-}
-
-
-
-
-5.	So first of all we include the header files for opencv and create a function rotate which has the image and angle as arguments. Inside the function the point of rotation is specified at which the image rotates through the given angle in anti clockwise direction. 
+4.      So first of all we include the header files for opencv and create a function rotate which has the image and angle as arguments. Inside the function the point of rotation is specified at which the image rotates through the given angle in anti clockwise direction. 
 
 warpAffine is used for the size of the output image.
 
@@ -72,12 +31,13 @@ waitKey(0) is used to that the windows are closed when the user presses a button
 
 destroyWindow is used at the end of the program so that once the windows have performed their task they can be destroyed.
 
-6.	The above program will work only when we have made some additional settings .
+5.	The above program will work only when we have made some additional settings .
 
 First of all we should check that the solution platform is the right configuration ( like I changed it to x64). 
 Then click on the project properties and add additional include directories, additional library directories and additional dependencies.
 
-7.	Now Build the program and Run to get the output.
+6.	Now Build the program and Run to get the output.
+7.      The code for the project is in the files.
 
  
  
